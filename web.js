@@ -3,8 +3,8 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 
-var buffer = new Buffer;
-buffer = fs.readFileSync('index.html');
+//var buffer = new Buffer;
+//buffer = fs.readFileSync('index.html');
 var outputText = 'hello' ; //buffer.toString();
 app.get('/', function(request, response) {
   response.send(outputText);
